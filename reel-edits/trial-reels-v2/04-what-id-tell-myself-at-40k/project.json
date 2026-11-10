@@ -1,0 +1,30 @@
+{
+  "n": "04",
+  "line": "What I'd tell myself at $40K a month.",
+  "section": "Story",
+  "broll": "a hand writing in a notebook, the page titled “dear me”.",
+  "audio": {
+    "track": "Sweet Heat Lightning",
+    "artist": "Gregory Alan Isakov"
+  },
+  "backup": "Linger",
+  "keyword": "REDESIGN",
+  "placeholders": [
+    "[twelve]"
+  ],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/04.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "04-what-id-tell-myself-at-40k.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

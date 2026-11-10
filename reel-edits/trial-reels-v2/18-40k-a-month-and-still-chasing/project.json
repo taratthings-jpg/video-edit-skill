@@ -1,0 +1,28 @@
+{
+  "n": "18",
+  "line": "$40K a month and still chasing every invoice?",
+  "section": "Money",
+  "broll": "typing a polite follow-up email, the cursor hovering over send.",
+  "audio": {
+    "track": "Upside Down",
+    "artist": "Diana Ross"
+  },
+  "backup": "Dracula",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/18.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "18-40k-a-month-and-still-chasing.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

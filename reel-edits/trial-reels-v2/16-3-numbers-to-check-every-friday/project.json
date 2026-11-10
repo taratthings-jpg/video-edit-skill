@@ -1,0 +1,28 @@
+{
+  "n": "16",
+  "line": "3 numbers to check every Friday. None of them is revenue.",
+  "section": "Money",
+  "broll": "a notebook page with three numbers in a column, a pen circling the first.",
+  "audio": {
+    "track": "Self Aware",
+    "artist": "Temper City"
+  },
+  "backup": "Autumn Colors",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/16.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "16-3-numbers-to-check-every-friday.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

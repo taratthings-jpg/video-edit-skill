@@ -1,0 +1,28 @@
+{
+  "n": "31",
+  "line": "No decision under $500 should reach you.",
+  "section": "Freedom",
+  "broll": "an approval request on a phone, a thumb hovering over approve.",
+  "audio": {
+    "track": "Housewife",
+    "artist": "Tate McRae"
+  },
+  "backup": "What You Waiting For?",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/31.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "31-no-decision-under-500-should-reach.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

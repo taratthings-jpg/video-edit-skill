@@ -1,0 +1,28 @@
+{
+  "n": "25",
+  "line": "One page that lets someone else deliver your work.",
+  "section": "Systems",
+  "broll": "a single printed page placed on a desk, a hand smoothing it flat.",
+  "audio": {
+    "track": "My Own Universe",
+    "artist": "PattiJ North"
+  },
+  "backup": "Autumn Colors",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/25.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "25-one-page-that-lets-someone-else.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "n": "48",
+  "line": "Booked out isn't success if you're the only one booked.",
+  "section": "Identity one-liners",
+  "broll": "a booking page on a laptop showing “fully booked”.",
+  "audio": {
+    "track": "Blue Moon",
+    "artist": "Zara Larsson"
+  },
+  "backup": "Raindance",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/48.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "48-booked-out-isnt-success-if-youre.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

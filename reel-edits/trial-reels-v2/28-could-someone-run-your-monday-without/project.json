@@ -1,0 +1,28 @@
+{
+  "n": "28",
+  "line": "Could someone run your Monday without you?",
+  "section": "Systems",
+  "broll": "a calendar on screen, Monday packed with blocks.",
+  "audio": {
+    "track": "Hold On, We're Going Home",
+    "artist": "Drake"
+  },
+  "backup": "Housewife",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/28.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "28-could-someone-run-your-monday-without.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

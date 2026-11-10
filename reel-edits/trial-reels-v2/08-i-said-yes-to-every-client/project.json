@@ -1,0 +1,30 @@
+{
+  "n": "08",
+  "line": "I said yes to every client for [three] years.",
+  "section": "Story",
+  "broll": "an inbox filling with enquiries, a finger tapping reply.",
+  "audio": {
+    "track": "Dracula",
+    "artist": "Tame Impala"
+  },
+  "backup": "Housewife",
+  "keyword": "SYSTEM",
+  "placeholders": [
+    "[three]"
+  ],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/08.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "08-i-said-yes-to-every-client.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

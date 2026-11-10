@@ -1,0 +1,28 @@
+{
+  "n": "20",
+  "line": "Pay yourself on the 1st. Before anything else.",
+  "section": "Money",
+  "broll": "a bank transfer screen, a fixed amount entered, confirm pressed.",
+  "audio": {
+    "track": "Blue Moon",
+    "artist": "Zara Larsson"
+  },
+  "backup": "Sunshine (Instrumental)",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/20.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "20-pay-yourself-on-the-1st-before.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

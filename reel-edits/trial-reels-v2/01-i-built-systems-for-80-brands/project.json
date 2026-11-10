@@ -1,0 +1,28 @@
+{
+  "n": "01",
+  "line": "I built systems for 80+ brands. Mine came last.",
+  "section": "Story",
+  "broll": "scrolling slowly through a folder of client brand files on the laptop.",
+  "audio": {
+    "track": "November Rain",
+    "artist": "Guns N' Roses"
+  },
+  "backup": "Everlong, Foo Fighters",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/01.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "01-i-built-systems-for-80-brands.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

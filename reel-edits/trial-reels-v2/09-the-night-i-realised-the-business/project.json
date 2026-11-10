@@ -1,0 +1,28 @@
+{
+  "n": "09",
+  "line": "The night I realised the business was me.",
+  "section": "Story",
+  "broll": "a laptop glowing in a dark room, a phone face down beside it.",
+  "audio": {
+    "track": "Strangers",
+    "artist": "Kenya Grace"
+  },
+  "backup": "Linger",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/09.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "09-the-night-i-realised-the-business.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

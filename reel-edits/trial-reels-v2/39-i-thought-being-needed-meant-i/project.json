@@ -1,0 +1,28 @@
+{
+  "n": "39",
+  "line": "I thought being needed meant I was doing it right.",
+  "section": "Freedom",
+  "broll": "a coffee going cold beside an open laptop and a full notebook.",
+  "audio": {
+    "track": "Linger",
+    "artist": "The Cranberries"
+  },
+  "backup": "Sweet Heat Lightning",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/39.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "39-i-thought-being-needed-meant-i.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

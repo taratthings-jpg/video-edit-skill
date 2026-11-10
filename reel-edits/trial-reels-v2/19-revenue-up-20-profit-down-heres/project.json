@@ -1,0 +1,28 @@
+{
+  "n": "19",
+  "line": "Revenue up 20%. Profit down. Here's why.",
+  "section": "Money",
+  "broll": "a spreadsheet chart, one line rising, another dipping.",
+  "audio": {
+    "track": "Raindance",
+    "artist": "Dave and Tems"
+  },
+  "backup": "Self Aware",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/19.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "19-revenue-up-20-profit-down-heres.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "n": "07",
+  "line": "Business three. Rule one: nothing comes to me by default.",
+  "section": "Story",
+  "broll": "a notebook page headed “rules”, a pen underlining the first line.",
+  "audio": {
+    "track": "What You Waiting For?",
+    "artist": "Gwen Stefani"
+  },
+  "backup": "Housewife, Tate McRae",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/07.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "07-business-three-rule-one-nothing-comes.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

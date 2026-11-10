@@ -1,0 +1,28 @@
+{
+  "n": "30",
+  "line": "The 30-minute Friday review I'd give every founder.",
+  "section": "Systems",
+  "broll": "a notebook open on a Friday afternoon, a timer set for 30 minutes.",
+  "audio": {
+    "track": "Sweet Heat Lightning",
+    "artist": "Gregory Alan Isakov"
+  },
+  "backup": "Autumn Colors",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/30.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "30-the-30-minute-friday-review-id.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

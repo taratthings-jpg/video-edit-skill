@@ -1,0 +1,28 @@
+{
+  "n": "13",
+  "line": "Your real hourly rate. Work it out in 60 seconds.",
+  "section": "Money",
+  "broll": "a phone calculator, fingers tapping in two numbers.",
+  "audio": {
+    "track": "Sunshine (Instrumental)",
+    "artist": "Twista"
+  },
+  "backup": "Self Aware",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/13.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "13-your-real-hourly-rate-work-it.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

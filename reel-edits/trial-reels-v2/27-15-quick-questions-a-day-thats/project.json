@@ -1,0 +1,28 @@
+{
+  "n": "27",
+  "line": "15 quick questions a day. That's 6 hours a week.",
+  "section": "Systems",
+  "broll": "a phone buzzing on a desk, a hand turning it face down.",
+  "audio": {
+    "track": "Luminary",
+    "artist": "Joel Sunny"
+  },
+  "backup": "Strangers",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/27.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "27-15-quick-questions-a-day-thats.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

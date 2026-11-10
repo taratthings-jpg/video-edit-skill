@@ -1,0 +1,28 @@
+{
+  "n": "22",
+  "line": "Record it once. Never explain it again.",
+  "section": "Systems",
+  "broll": "a screen recording starting, a cursor moving through a task.",
+  "audio": {
+    "track": "Autumn Colors",
+    "artist": "LuLuMusic"
+  },
+  "backup": "Sunshine (Instrumental)",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/22.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "22-record-it-once-never-explain-it.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

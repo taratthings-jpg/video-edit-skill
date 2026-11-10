@@ -1,0 +1,28 @@
+{
+  "n": "50",
+  "line": "freedom was never the reward for working harder.",
+  "section": "Identity one-liners",
+  "broll": "paddling out through calm water at first light, the board cutting a line.",
+  "audio": {
+    "track": "Ordinary",
+    "artist": "Alex Warren"
+  },
+  "backup": "Angel Of My Dreams",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/50.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "50-freedom-was-never-the-reward-for.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "n": "24",
+  "line": "Your best client asks. Only you know the answer.",
+  "section": "Systems",
+  "broll": "a phone notification lighting up on a desk.",
+  "audio": {
+    "track": "Linger",
+    "artist": "The Cranberries"
+  },
+  "backup": "Strangers",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/24.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "24-your-best-client-asks-only-you.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

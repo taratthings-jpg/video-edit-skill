@@ -1,0 +1,28 @@
+{
+  "n": "34",
+  "line": "Your marketing stops the week you do.",
+  "section": "Freedom",
+  "broll": "a content calendar with empty squares, the cursor scrolling past blank weeks.",
+  "audio": {
+    "track": "Strangers",
+    "artist": "Kenya Grace"
+  },
+  "backup": "Everlong",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/34.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "34-your-marketing-stops-the-week-you.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

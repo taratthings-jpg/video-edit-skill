@@ -1,0 +1,30 @@
+{
+  "n": "02",
+  "line": "At 21 I had an agency. At [26], no evenings.",
+  "section": "Story",
+  "broll": "an empty office at night, one desk lamp on, a laptop still open.",
+  "audio": {
+    "track": "Linger",
+    "artist": "The Cranberries"
+  },
+  "backup": "November Rain",
+  "keyword": "SYSTEM",
+  "placeholders": [
+    "[26]"
+  ],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/02.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "02-at-21-i-had-an-agency.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

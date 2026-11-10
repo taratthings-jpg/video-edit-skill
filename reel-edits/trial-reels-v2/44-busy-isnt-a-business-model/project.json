@@ -1,0 +1,28 @@
+{
+  "n": "44",
+  "line": "busy isn't a business model.",
+  "section": "Identity one-liners",
+  "broll": "a calendar on screen, every slot filled, scrolling slowly.",
+  "audio": {
+    "track": "Housewife",
+    "artist": "Tate McRae"
+  },
+  "backup": "Nicole Kidman",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/44.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "44-busy-isnt-a-business-model.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

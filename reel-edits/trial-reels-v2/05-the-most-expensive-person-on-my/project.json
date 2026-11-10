@@ -1,0 +1,28 @@
+{
+  "n": "05",
+  "line": "The most expensive person on my payroll got paid last.",
+  "section": "Story",
+  "broll": "a spreadsheet of payments, the cursor stopping on the last row.",
+  "audio": {
+    "track": "Sunshine (Instrumental)",
+    "artist": "Twista"
+  },
+  "backup": "Self Aware, Temper City",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/05.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "05-the-most-expensive-person-on-my.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "n": "14",
+  "line": "Payroll's Friday. Two invoices are 30 days late.",
+  "section": "Money",
+  "broll": "a wall calendar with Friday circled in red.",
+  "audio": {
+    "track": "Luminary",
+    "artist": "Joel Sunny"
+  },
+  "backup": "Strangers",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/14.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "14-payrolls-friday-two-invoices-are-30.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

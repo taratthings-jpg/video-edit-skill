@@ -1,0 +1,28 @@
+{
+  "n": "33",
+  "line": "Your clients only want you. You designed it that way.",
+  "section": "Freedom",
+  "broll": "a video call on screen with the same face in every tile.",
+  "audio": {
+    "track": "Patient Zero",
+    "artist": "Taylor Swift"
+  },
+  "backup": "Luminary",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/33.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "33-your-clients-only-want-you-you.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

@@ -7,3 +7,5 @@ assets/template/assets/sfx/*.part
 *.log
 .DS_Store
 node_modules/
+reel-edits/**/*.mp4
+reel-edits/**/*.mov

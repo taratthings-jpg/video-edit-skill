@@ -1,0 +1,28 @@
+{
+  "n": "38",
+  "line": "A new client emails. Why does it land with you?",
+  "section": "Freedom",
+  "broll": "an inbox notification with a new client's name.",
+  "audio": {
+    "track": "Self Aware",
+    "artist": "Temper City"
+  },
+  "backup": "Hold On, We're Going Home",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/38.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "38-a-new-client-emails-why-does.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "n": "42",
+  "line": "small team. big margins. fridays off.",
+  "section": "Identity one-liners",
+  "broll": "a laptop closing slowly on a Friday afternoon, light on the desk.",
+  "audio": {
+    "track": "So Easy (To Fall In Love)",
+    "artist": "Olivia Dean"
+  },
+  "backup": "Blue Moon",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/42.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "42-small-team-big-margins-fridays-off.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

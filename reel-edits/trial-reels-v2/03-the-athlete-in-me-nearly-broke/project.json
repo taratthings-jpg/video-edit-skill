@@ -1,0 +1,28 @@
+{
+  "n": "03",
+  "line": "The athlete in me nearly broke the founder in me.",
+  "section": "Story",
+  "broll": "feet on a court, one slow-motion training rep.",
+  "audio": {
+    "track": "Everlong",
+    "artist": "Foo Fighters"
+  },
+  "backup": "What You Waiting For?, Gwen Stefani",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/03.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "03-the-athlete-in-me-nearly-broke.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

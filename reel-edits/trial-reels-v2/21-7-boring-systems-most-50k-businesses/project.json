@@ -1,0 +1,28 @@
+{
+  "n": "21",
+  "line": "7 boring systems. Most $50K businesses miss 3.",
+  "section": "Systems",
+  "broll": "a notebook page with seven numbered lines, three of them blank.",
+  "audio": {
+    "track": "Sunshine (Instrumental)",
+    "artist": "Twista"
+  },
+  "backup": "Self Aware",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/21.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "21-7-boring-systems-most-50k-businesses.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

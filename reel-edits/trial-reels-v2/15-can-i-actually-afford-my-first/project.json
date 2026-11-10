@@ -1,0 +1,28 @@
+{
+  "n": "15",
+  "line": "“Can I actually afford my first hire?”",
+  "section": "Money",
+  "broll": "a job ad half written on a laptop, the cursor blinking.",
+  "audio": {
+    "track": "What You Waiting For?",
+    "artist": "Gwen Stefani"
+  },
+  "backup": "Hold On, We're Going Home",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/15.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "15-can-i-actually-afford-my-first.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

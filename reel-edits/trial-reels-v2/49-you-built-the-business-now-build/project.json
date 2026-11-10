@@ -1,0 +1,28 @@
+{
+  "n": "49",
+  "line": "You built the business. Now build the one that runs without you.",
+  "section": "Identity one-liners",
+  "broll": "a woman walking out of a room, the door closing gently behind her.",
+  "audio": {
+    "track": "Beautiful Things",
+    "artist": "Benson Boone"
+  },
+  "backup": "Ordinary, Alex Warren",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/49.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "49-you-built-the-business-now-build.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

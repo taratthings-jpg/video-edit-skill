@@ -1,0 +1,28 @@
+{
+  "n": "12",
+  "line": "Raising your prices won't fix this.",
+  "section": "Money",
+  "broll": "a proposal on screen, the price field being edited.",
+  "audio": {
+    "track": "Housewife",
+    "artist": "Tate McRae"
+  },
+  "backup": "Nicole Kidman, ADÉLA",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/12.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "12-raising-your-prices-wont-fix-this.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

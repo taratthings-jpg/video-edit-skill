@@ -1,0 +1,28 @@
+{
+  "n": "46",
+  "line": "the goal isn't more revenue. it's more of it reaching you.",
+  "section": "Identity one-liners",
+  "broll": "a sunset over the water, a glass on a table, the light going gold.",
+  "audio": {
+    "track": "Angel Of My Dreams",
+    "artist": "JADE"
+  },
+  "backup": "So Easy (To Fall In Love)",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/46.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "46-the-goal-isnt-more-revenue-its.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

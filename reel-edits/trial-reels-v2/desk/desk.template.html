@@ -1,0 +1,348 @@
+<title>Trial Reels Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+/* Layout: a calm production desk. Sticky header with view switch, then Board / List / Phone views; a side sheet for each reel; a posting checklist that gates "Mark as posted". */
+:root{
+  --bg:#F3E9DE; --surface:#FBF6F0; --sunk:#E9D7C4; --line:#D3B89E;
+  --ink:#2E1D0D; --muted:#6B5440; --accent:#0F5F61; --accent-ink:#F3E9DE; --plum:#5A283E;
+  --s-film:#9A7B5F; --s-clip:#C76A4A; --s-edited:#0F5F61; --s-posted:#5A283E;
+  --frame-a:#0F5F61; --frame-b:#492F16;
+  --display:"Playfair Display", Georgia, "Times New Roman", serif;
+  --body:"Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B130C; --surface:#251A11; --sunk:#30231A; --line:#4A3726;
+  --ink:#F1E4D5; --muted:#BFA88F; --accent:#5FB3B0; --accent-ink:#10201F; --plum:#C58AA3;
+  --s-film:#B59A80; --s-clip:#E08A6B; --s-edited:#5FB3B0; --s-posted:#C58AA3; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B130C; --surface:#251A11; --sunk:#30231A; --line:#4A3726;
+  --ink:#F1E4D5; --muted:#BFA88F; --accent:#5FB3B0; --accent-ink:#10201F; --plum:#C58AA3;
+  --s-film:#B59A80; --s-clip:#E08A6B; --s-edited:#5FB3B0; --s-posted:#C58AA3; color-scheme:dark}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:1320px;margin:0 auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:14px}
+h1{font-family:var(--display);font-weight:400;font-size:26px;margin:0;letter-spacing:.01em}
+h1 em{font-style:italic;color:var(--accent)}
+.tally{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tally b{color:var(--ink);font-weight:600}
+.spacer{flex:1}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{border:0;background:none;color:var(--muted);font:500 12px var(--body);padding:6px 14px;border-radius:999px;cursor:pointer;letter-spacing:.04em;text-transform:uppercase}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-block:12px}
+select,input[type=search],input[type=number],textarea{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+input[type=search]{min-width:0;flex:1 1 200px;max-width:320px}
+button.btn{font:600 12px var(--body);letter-spacing:.04em;border-radius:8px;padding:9px 14px;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+button.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button.btn:disabled{opacity:.45;cursor:not-allowed}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.note{font-size:12px;color:var(--muted)}
+main{padding-block:4px 48px}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--dot,var(--muted))}
+.st-film{--dot:var(--s-film)}.st-clip{--dot:var(--s-clip)}.st-edited{--dot:var(--s-edited)}.st-posted{--dot:var(--s-posted)}
+/* Board */
+.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start}
+@media (max-width:980px){.board{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.board{grid-template-columns:minmax(0,1fr)}}
+.col{background:var(--sunk);border-radius:var(--r);padding:10px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.col h2{font:600 12px var(--body);letter-spacing:.06em;text-transform:uppercase;margin:2px 4px 4px;display:flex;justify-content:space-between}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;gap:4px;min-width:0}
+.card:hover{border-color:var(--accent)}
+.card .ln{font-family:var(--display);font-size:16px;line-height:1.3}
+.meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11px;color:var(--muted)}
+.meta .kw{color:var(--plum);font-weight:600;letter-spacing:.06em}
+.empty{font-size:12px;color:var(--muted);padding:6px 4px}
+/* List */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:860px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 11px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
+tbody tr{cursor:pointer}tbody tr:hover{background:var(--sunk)}
+td.ln{font-family:var(--display);font-size:15px;max-width:340px}
+td.num{text-align:right}
+/* Phone */
+.phones{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px}
+.phone{display:flex;flex-direction:column;gap:6px;cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left}
+.frame{position:relative;aspect-ratio:9/16;max-width:100%;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,var(--frame-a),var(--frame-b));box-shadow:0 1px 0 var(--line)}
+.frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame .ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(73,47,22,.7),rgba(73,47,22,0) 38%)}
+.frame .tx{position:absolute;left:7.4%;right:9.3%;top:11.5%;font-family:var(--display);color:#E9D7C4;font-size:clamp(11px,8.5cqw,40px);line-height:1.16;text-shadow:0 0 14px rgba(73,47,22,.9),0 0 4px rgba(73,47,22,.8)}
+.frame{container-type:inline-size}
+.frame .badge{position:absolute;left:8px;bottom:8px;background:rgba(27,19,12,.7);color:#F3E9DE;font-size:10px;font-weight:600;letter-spacing:.06em;padding:3px 8px;border-radius:999px;text-transform:uppercase}
+/* Sheet */
+.scrim{position:fixed;inset:0;background:rgba(27,19,12,.45);z-index:20}
+.sheet{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--bg);z-index:21;overflow-y:auto;border-left:1px solid var(--line);padding:calc(18px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) 20px;display:flex;flex-direction:column;gap:18px}
+.sheet h3{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.25;margin:0;text-wrap:balance}
+.sheet .top{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.sheet section{display:flex;flex-direction:column;gap:8px}
+.lbl{font:600 11px var(--body);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.cap{white-space:pre-wrap;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px;max-height:260px;overflow:auto}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.grid2{display:grid;grid-template-columns:200px minmax(0,1fr);gap:16px}
+@media (max-width:520px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stats label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--muted)}
+.stats input{width:100%}
+textarea{width:100%;min-height:64px;resize:vertical}
+.warn{font-size:12px;color:var(--s-clip)}
+/* Post dialog */
+.post{position:fixed;inset:0;display:grid;place-items:center;z-index:30;padding:16px}
+.post .box{background:var(--bg);border:1px solid var(--line);border-radius:14px;width:min(520px,100%);max-height:100%;overflow:auto;padding:22px;display:flex;flex-direction:column;gap:16px}
+.post h4{font-family:var(--display);font-weight:400;font-size:22px;margin:0}
+.step{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}
+.step .no{width:24px;height:24px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:12px;font-weight:600}
+.step.done .no{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.checks{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.checks label{display:flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 12px;cursor:pointer}
+.checks input{width:18px;height:18px;accent-color:var(--accent)}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:13px;z-index:40}
+.offline{background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header><div class="wrap">
+  <h1>Trial reels <em>desk</em></h1>
+  <div class="tally" id="tally"></div>
+  <div class="spacer"></div>
+  <div class="seg" role="group" aria-label="View">
+    <button id="v-board" data-view="board">Board</button>
+    <button id="v-list" data-view="list">List</button>
+    <button id="v-phone" data-view="phone">Phone</button>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <div class="tools">
+    <input type="search" id="q" placeholder="Search lines and captions" aria-label="Search">
+    <select id="f-section" aria-label="Section"><option value="">All sections</option></select>
+    <select id="f-status" aria-label="Status"><option value="">All statuses</option></select>
+    <select id="f-sort" aria-label="Sort"><option value="n">Sort: reel number</option><option value="views">Sort: views</option><option value="follows">Sort: follows</option><option value="posted">Sort: posted date</option></select>
+    <span class="note" id="sync">Connecting…</span>
+  </div>
+  <main id="main"></main>
+</div>
+
+<div id="layer"></div>
+
+<script id="reels-data" type="application/json">__REELS__</script>
+<script>
+const REELS = JSON.parse(document.getElementById('reels-data').textContent);
+const STATUSES = [
+  {id:'film', label:'To film', cls:'st-film'},
+  {id:'clip', label:'Clip in', cls:'st-clip'},
+  {id:'edited', label:'Edited', cls:'st-edited'},
+  {id:'posted', label:'Posted', cls:'st-posted'},
+];
+const SMAP = Object.fromEntries(STATUSES.map(s=>[s.id,s]));
+const state = { rec:{}, view:'board', q:'', section:'', status:'', sort:'n', open:null, db:null, assets:null, downloads:null, user:null };
+const $ = (s,el=document)=>el.querySelector(s);
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rec = n => state.rec[n] || {};
+const statusOf = n => { const r=rec(n); if (r.status) return r.status; return r.videoId ? 'edited' : 'film'; };
+const num = v => (v===''||v==null||isNaN(+v)) ? null : +v;
+const fmt = v => v==null ? '—' : Number(v).toLocaleString('en-GB');
+const fmtDate = s => s ? new Date(s).toLocaleDateString('en-GB',{day:'numeric',month:'short'}) : '—';
+function toast(t){ const d=document.createElement('div'); d.className='toast'; d.textContent=t; document.body.appendChild(d); setTimeout(()=>d.remove(),2200); }
+function store(k,v){ try{localStorage.setItem('trd.'+k,v)}catch(e){} }
+function load(k){ try{return localStorage.getItem('trd.'+k)}catch(e){return null} }
+
+// ---------- filters & view ----------
+[...new Set(REELS.map(r=>r.section))].forEach(s=>$('#f-section').insertAdjacentHTML('beforeend',`<option>${esc(s)}</option>`));
+STATUSES.forEach(s=>$('#f-status').insertAdjacentHTML('beforeend',`<option value="${s.id}">${s.label}</option>`));
+const VIEWS=['board','list','phone'];
+function setView(v, push){ if(!VIEWS.includes(v)) v='board'; state.view=v; store('view',v);
+  document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed', b.dataset.view===v));
+  if (push && location.hash !== '#'+v) location.hash = v; render(); }
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view,true)));
+addEventListener('hashchange',()=>setView(location.hash.slice(1)));
+$('#q').addEventListener('input',e=>{state.q=e.target.value.toLowerCase(); render();});
+$('#f-section').addEventListener('change',e=>{state.section=e.target.value; store('section',state.section); render();});
+$('#f-status').addEventListener('change',e=>{state.status=e.target.value; store('status',state.status); render();});
+$('#f-sort').addEventListener('change',e=>{state.sort=e.target.value; store('sort',state.sort); render();});
+state.section=load('section')||''; state.status=load('status')||''; state.sort=load('sort')||'n';
+$('#f-section').value=state.section; $('#f-status').value=state.status; $('#f-sort').value=state.sort;
+
+function visible(){
+  let list = REELS.filter(r=>(!state.section||r.section===state.section)&&(!state.status||statusOf(r.n)===state.status)
+    &&(!state.q||(r.line+' '+r.caption+' '+r.broll).toLowerCase().includes(state.q)));
+  const key = {views:r=>-(num(rec(r.n).views)??-1), follows:r=>-(num(rec(r.n).follows)??-1), posted:r=>-(rec(r.n).postedAt?Date.parse(rec(r.n).postedAt):0), n:r=>+r.n}[state.sort];
+  return list.sort((a,b)=>key(a)-key(b) || a.n-b.n);
+}
+
+function tally(){
+  const c = Object.fromEntries(STATUSES.map(s=>[s.id,0])); let views=0, follows=0;
+  REELS.forEach(r=>{c[statusOf(r.n)]++; views+=num(rec(r.n).views)||0; follows+=num(rec(r.n).follows)||0;});
+  $('#tally').innerHTML = STATUSES.map(s=>`<span><b>${c[s.id]}</b> ${s.label.toLowerCase()}</span>`).join('')
+    + `<span><b>${fmt(views)}</b> views</span><span><b>${fmt(follows)}</b> follows</span>`;
+}
+
+function cardMeta(r){ const x=rec(r.n);
+  return `<div class="meta"><span>${r.n} · ${esc(r.section)}</span>${r.keyword?`<span class="kw">${r.keyword}</span>`:''}
+    <span>♪ ${esc(r.audio.track)}</span>${statusOf(r.n)==='posted'?`<span>${fmt(num(x.views))} views · ${fmt(num(x.follows))} follows</span>`:''}</div>`; }
+
+function frame(r, small){ const x=rec(r.n);
+  const vid = x.videoId ? `<video src="/_blob/${esc(x.videoId)}" muted playsinline loop preload="metadata"></video>` : '';
+  return `<div class="frame">${vid}${x.videoId?'':`<div class="ov"></div><div class="tx">${esc(r.line)}</div>`}
+    <span class="badge">${x.videoId?'Edited video':'Overlay preview'}</span></div>`; }
+
+function render(){
+  tally();
+  const list = visible(), m = $('#main');
+  if (!list.length){ m.innerHTML = `<p class="empty">No reels match these filters.</p>`; return; }
+  if (state.view==='board'){
+    m.innerHTML = `<div class="board">${STATUSES.map(s=>{ const items=list.filter(r=>statusOf(r.n)===s.id);
+      return `<div class="col"><h2><span class="pill ${s.cls}">${s.label}</span><span>${items.length}</span></h2>
+        ${items.map(r=>`<button class="card" data-n="${r.n}"><span class="ln">${esc(r.line)}</span>${cardMeta(r)}</button>`).join('') || '<div class="empty">Nothing here yet.</div>'}</div>`;}).join('')}</div>`;
+  } else if (state.view==='list'){
+    m.innerHTML = `<div class="tablewrap"><table><thead><tr><th>#</th><th>On-screen line</th><th>Status</th><th>Audio</th><th>Keyword</th><th>Posted</th><th class="num">Views</th><th class="num">Follows</th><th class="num">Shares</th></tr></thead><tbody>
+      ${list.map(r=>{const x=rec(r.n), s=SMAP[statusOf(r.n)]; return `<tr data-n="${r.n}" tabindex="0"><td>${r.n}</td><td class="ln">${esc(r.line)}</td><td><span class="pill ${s.cls}">${s.label}</span></td><td>${esc(r.audio.track)}<div class="note">backup: ${esc(r.backup)}</div></td><td>${r.keyword}</td><td>${fmtDate(x.postedAt)}</td><td class="num">${fmt(num(x.views))}</td><td class="num">${fmt(num(x.follows))}</td><td class="num">${fmt(num(x.shares))}</td></tr>`;}).join('')}
+      </tbody></table></div>`;
+  } else {
+    m.innerHTML = `<div class="phones">${list.map(r=>{const s=SMAP[statusOf(r.n)]; return `<button class="phone" data-n="${r.n}">${frame(r)}<span class="pill ${s.cls}">${r.n} · ${s.label}</span></button>`;}).join('')}</div>`;
+    m.querySelectorAll('video').forEach(v=>{ v.parentElement.parentElement.addEventListener('mouseenter',()=>v.play().catch(()=>{})); v.parentElement.parentElement.addEventListener('mouseleave',()=>v.pause()); });
+  }
+  m.querySelectorAll('[data-n]').forEach(el=>{ el.addEventListener('click',()=>openSheet(el.dataset.n));
+    el.addEventListener('keydown',e=>{ if(e.key==='Enter') openSheet(el.dataset.n); }); });
+  if (state.open) drawSheet();
+}
+
+// ---------- persistence ----------
+let writing = {};
+async function save(n, patch){
+  state.rec[n] = {...rec(n), ...patch, updatedAt:new Date().toISOString()};
+  render();
+  if (!state.db){ toast('Not saved: the shared store is not connected in this view.'); return; }
+  const doc = state.db.doc('reels/'+n);
+  while (writing[n]) await writing[n];
+  writing[n] = doc.set(state.rec[n]).catch(e=>toast('Could not save: '+(e.message||e.code))).finally(()=>{writing[n]=null;});
+  await writing[n];
+}
+
+// ---------- reel sheet ----------
+function openSheet(n){ state.open=n; drawSheet(); }
+function closeSheet(){ state.open=null; $('#layer').innerHTML=''; }
+function drawSheet(){
+  const r = REELS.find(x=>x.n===state.open), x = rec(r.n), st = statusOf(r.n);
+  const ph = r.placeholders.length ? `<p class="warn">Confirm before posting: ${r.placeholders.map(esc).join(', ')}</p>` : '';
+  $('#layer').innerHTML = `<div class="scrim" id="scrim"></div><aside class="sheet" role="dialog" aria-modal="true" aria-label="Reel ${r.n}">
+    <div class="top"><div><div class="lbl">Reel ${r.n} · ${esc(r.section)}</div><h3>${esc(r.line)}</h3></div><button class="btn" id="x" aria-label="Close">Close</button></div>
+    ${ph}
+    <div class="grid2"><div>${frame(r)}</div>
+      <section>
+        <div class="lbl">Status</div>
+        <select id="st">${STATUSES.map(s=>`<option value="${s.id}" ${s.id===st?'selected':''}>${s.label}</option>`).join('')}</select>
+        <div class="lbl">Clip</div><div>${esc(r.broll)}</div>
+        <div class="lbl">Audio, added in Edits or Instagram</div><div>${esc(r.audio.track)}${r.audio.artist?', '+esc(r.audio.artist):''}<div class="note">Backup: ${esc(r.backup)}. Use the backup if the reel count has stopped rising.</div></div>
+      </section></div>
+    <section>
+      <div class="lbl">Edited video</div>
+      ${x.videoId?`<div class="row"><span>${esc(x.videoName||r.slug+'.mp4')}</span><button class="btn" id="rep">Replace</button></div>`:`<div class="row"><button class="btn" id="up">Add edited video</button><span class="note">The 7-second export from Edits or from the render script, under 20 MB.</span></div>`}
+      <input type="file" id="file" accept="video/mp4,video/quicktime" hidden>
+      ${state.assets?'':`<div class="offline">Adding videos needs edit access to this desk.</div>`}
+    </section>
+    <section>
+      <div class="row" style="justify-content:space-between"><div class="lbl">Caption</div><button class="btn" id="copy">Copy caption</button></div>
+      <div class="cap" id="captext">${esc(r.caption)}</div>
+    </section>
+    <section>
+      <button class="btn primary" id="post" ${x.videoId?'':'disabled'}>${st==='posted'?'Post again':'Post'}</button>
+      ${x.videoId?'':'<span class="note">Add the edited video first. Post exports it with the caption and the trial reel settings.</span>'}
+      ${x.postedAt?`<span class="note">Posted ${new Date(x.postedAt).toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'})} as a trial reel, Facebook and Threads off${x.audioUsed?', audio: '+esc(x.audioUsed):''}.</span>`:''}
+    </section>
+    <section>
+      <div class="lbl">Results</div>
+      <div class="stats">
+        <label>Views<input type="number" min="0" id="views" value="${esc(x.views??'')}"></label>
+        <label>Follows<input type="number" min="0" id="follows" value="${esc(x.follows??'')}"></label>
+        <label>Shares<input type="number" min="0" id="shares" value="${esc(x.shares??'')}"></label>
+      </div>
+      <label class="lbl" for="notes">Notes</label>
+      <textarea id="notes" placeholder="What changed, what to test next">${esc(x.notes??'')}</textarea>
+    </section>
+  </aside>`;
+  $('#scrim').onclick = $('#x').onclick = closeSheet;
+  $('#st').onchange = e => save(r.n,{status:e.target.value});
+  $('#copy').onclick = () => copyCaption(r);
+  const pick = () => $('#file').click();
+  if ($('#up')) $('#up').onclick = pick; if ($('#rep')) $('#rep').onclick = pick;
+  if (!state.assets){ if($('#up')) $('#up').disabled=true; if($('#rep')) $('#rep').disabled=true; }
+  $('#file').onchange = e => upload(r, e.target.files[0]);
+  $('#post').onclick = () => openPost(r);
+  ['views','follows','shares','notes'].forEach(k=>$('#'+k).addEventListener('change',e=>save(r.n,{[k]:e.target.value})));
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ if($('.post')) $('.post').remove(); else if(state.open) closeSheet(); }});
+
+async function copyCaption(r){
+  try { await navigator.clipboard.writeText(r.caption); toast('Caption copied'); return true; }
+  catch(e){ const el=$('#captext')||$('#pcap'); if(el){ const s=getSelection(), rg=document.createRange(); rg.selectNodeContents(el); s.removeAllRanges(); s.addRange(rg);} toast('Caption selected: press copy on your keyboard'); return false; }
+}
+
+async function upload(r, f){
+  if (!f || !state.assets) return;
+  if (f.size > 20*1024*1024){ toast('That file is over 20 MB. Export at 1080p and try again.'); return; }
+  toast('Uploading…');
+  try { const a = await state.assets.upload(f);
+    const x = rec(r.n), patch = {videoId:a.id, videoName:f.name};
+    if (statusOf(r.n)!=='posted') patch.status='edited';
+    await save(r.n, patch); toast('Edited video added');
+  } catch(e){ toast('Upload failed: '+(e.message||e.code)); }
+}
+
+// ---------- post flow ----------
+function openPost(r){
+  const x = rec(r.n), d = {exported:false, copied:false};
+  const el = document.createElement('div'); el.className='post';
+  el.innerHTML = `<div class="scrim"></div><div class="box" role="dialog" aria-modal="true" aria-label="Post reel ${r.n}" style="position:relative;z-index:1">
+    <div><div class="lbl">Post reel ${r.n} to @taraphilipofficial</div><h4>${esc(r.line)}</h4></div>
+    <div class="step" id="s1"><span class="no">1</span><div><b>Export the reel</b><div class="note">Saves ${esc(r.slug)}.mp4 to this device.</div><div class="row" style="margin-top:6px"><button class="btn primary" id="exp">Export video</button></div></div></div>
+    <div class="step" id="s2"><span class="no">2</span><div><b>Copy the caption</b><div class="cap" id="pcap" style="max-height:120px;margin-top:6px">${esc(r.caption)}</div><div class="row" style="margin-top:6px"><button class="btn" id="cp">Copy caption</button></div></div></div>
+    <div class="step" id="s3"><span class="no">3</span><div><b>In Edits or Instagram, before you share</b>
+      <div class="checks">
+        <label><input type="checkbox" id="c-audio"> Audio added: ${esc(r.audio.track)} <span class="note">(or ${esc(r.backup)})</span></label>
+        <label><input type="checkbox" id="c-trial"> Trial reel is <b>on</b></label>
+        <label><input type="checkbox" id="c-fb"> Share to Facebook is <b>off</b></label>
+        <label><input type="checkbox" id="c-th"> Share to Threads is <b>off</b></label>
+      </div></div></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="cancel">Cancel</button><button class="btn primary" id="done" disabled>Mark as posted</button></div>
+  </div>`;
+  document.body.appendChild(el);
+  const check = () => { const ok = d.exported && d.copied && ['c-audio','c-trial','c-fb','c-th'].every(id=>$('#'+id,el).checked);
+    $('#done',el).disabled = !ok; $('#s1',el).classList.toggle('done',d.exported); $('#s2',el).classList.toggle('done',d.copied);
+    $('#s3',el).classList.toggle('done',['c-audio','c-trial','c-fb','c-th'].every(id=>$('#'+id,el).checked)); };
+  el.querySelectorAll('input').forEach(i=>i.addEventListener('change',check));
+  $('#cancel',el).onclick = $('.scrim',el).onclick = () => el.remove();
+  $('#cp',el).onclick = async () => { await copyCaption(r); d.copied = true; check(); };
+  $('#exp',el).onclick = async () => {
+    if (!state.downloads){ toast('Export is not available in this view. Open the desk on claude.ai.'); return; }
+    const b=$('#exp',el); b.disabled=true; b.textContent='Preparing…';
+    try { const blob = await (await fetch('/_blob/'+x.videoId)).blob();
+      await state.downloads.save({filename:r.slug+'.mp4', data:blob}); d.exported=true; b.textContent='Exported'; toast('Video saved');
+    } catch(e){ b.disabled=false; b.textContent='Export video'; toast(e && e.code==='declined' ? 'Export cancelled' : 'Export failed: '+((e&&e.message)||e)); }
+    check(); };
+  $('#done',el).onclick = async () => { el.remove();
+    await save(r.n,{status:'posted', postedAt:new Date().toISOString(), audioUsed:r.audio.track,
+      postSettings:{account:'@taraphilipofficial', trialReel:true, shareToFacebook:false, shareToThreads:false}});
+    toast('Marked as posted'); };
+  check();
+}
+
+// ---------- boot ----------
+setView(location.hash.slice(1) || load('view') || 'board');
+(async()=>{
+  const c = window.claude; if (!c || !c.use){ $('#sync').textContent='Offline preview: changes are not saved.'; return; }
+  const [db, assets, downloads] = await Promise.all([c.use('db'), c.use('assets'), c.use('downloads')]);
+  Object.assign(state,{db, assets, downloads});
+  if (!db){ $('#sync').textContent='Read only: sign in to save changes.'; render(); return; }
+  db.collection('reels').onSnapshot(snap=>{
+    snap.docs.forEach(d=>{ if (d.exists && !writing[d.id]) state.rec[d.id]=d.data(); });
+    $('#sync').textContent='Saved for everyone with access'; render();
+  }, e=>{ $('#sync').textContent='Could not load saved progress ('+(e.code||'error')+').'; });
+})();
+</script>

@@ -1,0 +1,28 @@
+{
+  "n": "43",
+  "line": "a business that needs you daily is a job you can't quit.",
+  "section": "Identity one-liners",
+  "broll": "an empty desk chair pushed back from a laptop, the screen still glowing.",
+  "audio": {
+    "track": "Dracula",
+    "artist": "Tame Impala"
+  },
+  "backup": "Housewife",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/43.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "43-a-business-that-needs-you-daily.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

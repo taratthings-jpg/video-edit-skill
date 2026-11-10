@@ -1,0 +1,28 @@
+{
+  "n": "47",
+  "line": "Delegating more won't fix a business built around you.",
+  "section": "Identity one-liners",
+  "broll": "a hand sliding a folder across a desk, and the folder sliding back.",
+  "audio": {
+    "track": "Everlong",
+    "artist": "Foo Fighters"
+  },
+  "backup": "Luminary",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/47.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "47-delegating-more-wont-fix-a-business.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

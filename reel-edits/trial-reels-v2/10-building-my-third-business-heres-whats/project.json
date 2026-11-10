@@ -1,0 +1,28 @@
+{
+  "n": "10",
+  "line": "Building my third business. Here's what's different.",
+  "section": "Story",
+  "broll": "a laptop open at an outdoor table by the ocean, a coffee, a notebook.",
+  "audio": {
+    "track": "So Easy (To Fall In Love)",
+    "artist": "Olivia Dean"
+  },
+  "backup": "Angel Of My Dreams, JADE",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/10.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "10-building-my-third-business-heres-whats.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

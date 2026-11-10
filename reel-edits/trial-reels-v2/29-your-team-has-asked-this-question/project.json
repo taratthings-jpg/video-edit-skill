@@ -1,0 +1,28 @@
+{
+  "n": "29",
+  "line": "Your team has asked this question before. Probably twice.",
+  "section": "Systems",
+  "broll": "a search bar in the team chat, the same question appearing three times.",
+  "audio": {
+    "track": "The Blue Danube Waltz",
+    "artist": ""
+  },
+  "backup": "Upside Down",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/29.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "29-your-team-has-asked-this-question.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

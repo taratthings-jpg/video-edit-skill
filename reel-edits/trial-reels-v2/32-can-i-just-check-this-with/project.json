@@ -1,0 +1,28 @@
+{
+  "n": "32",
+  "line": "“Can I just check this with you?”",
+  "section": "Freedom",
+  "broll": "a chat message arriving, the typing dots appearing again and again.",
+  "audio": {
+    "track": "Upside Down",
+    "artist": "Diana Ross"
+  },
+  "backup": "The Blue Danube Waltz",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/32.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "32-can-i-just-check-this-with.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

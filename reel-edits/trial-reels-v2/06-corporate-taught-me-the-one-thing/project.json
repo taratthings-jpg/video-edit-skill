@@ -1,0 +1,28 @@
+{
+  "n": "06",
+  "line": "Corporate taught me the one thing founders skip.",
+  "section": "Story",
+  "broll": "a whiteboard, a simple table of names and decisions being drawn.",
+  "audio": {
+    "track": "Self Aware",
+    "artist": "Temper City"
+  },
+  "backup": "Sunshine (Instrumental)",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/06.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "06-corporate-taught-me-the-one-thing.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

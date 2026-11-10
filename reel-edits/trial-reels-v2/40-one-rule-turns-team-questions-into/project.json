@@ -1,0 +1,28 @@
+{
+  "n": "40",
+  "line": "One rule turns team questions into decisions.",
+  "section": "Freedom",
+  "broll": "a notebook page with three short lines: situation, options, recommendation.",
+  "audio": {
+    "track": "Hold On, We're Going Home",
+    "artist": "Drake"
+  },
+  "backup": "Sunshine (Instrumental)",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/40.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "40-one-rule-turns-team-questions-into.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

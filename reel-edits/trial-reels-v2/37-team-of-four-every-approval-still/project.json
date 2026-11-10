@@ -1,0 +1,28 @@
+{
+  "n": "37",
+  "line": "Team of four. Every approval still comes to you.",
+  "section": "Freedom",
+  "broll": "a stack of approval notifications on a phone, all addressed to one person.",
+  "audio": {
+    "track": "Raindance",
+    "artist": "Dave and Tems"
+  },
+  "backup": "Dracula",
+  "keyword": "SYSTEM",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/37.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "37-team-of-four-every-approval-still.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

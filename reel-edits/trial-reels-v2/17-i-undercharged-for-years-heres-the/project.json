@@ -1,0 +1,28 @@
+{
+  "n": "17",
+  "line": "I undercharged for years. Here's the real reason.",
+  "section": "Money",
+  "broll": "a proposal, a highlighter running over the fee line.",
+  "audio": {
+    "track": "Beautiful Things",
+    "artist": "Benson Boone"
+  },
+  "backup": "Linger",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/17.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "17-i-undercharged-for-years-heres-the.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

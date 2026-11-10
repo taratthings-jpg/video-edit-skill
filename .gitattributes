@@ -3,3 +3,6 @@
 *.py text eol=lf
 *.woff2 binary
 *.mp3 binary
+*.woff binary
+*.png binary
+*.jpg binary

@@ -1,0 +1,28 @@
+{
+  "n": "45",
+  "line": "you don't need a bigger team. you need fewer decisions.",
+  "section": "Identity one-liners",
+  "broll": "a notebook, a pen drawing a line through half a list.",
+  "audio": {
+    "track": "Nicole Kidman",
+    "artist": "ADÉLA"
+  },
+  "backup": "Housewife",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/45.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "45-you-dont-need-a-bigger-team.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

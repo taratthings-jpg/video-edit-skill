@@ -1,0 +1,28 @@
+{
+  "n": "35",
+  "line": "4 decisions your team should own by Friday.",
+  "section": "Freedom",
+  "broll": "a whiteboard with four boxes, names being written into each.",
+  "audio": {
+    "track": "Sunshine (Instrumental)",
+    "artist": "Twista"
+  },
+  "backup": "Self Aware",
+  "keyword": "AUDIT",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/35.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "35-4-decisions-your-team-should-own.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}

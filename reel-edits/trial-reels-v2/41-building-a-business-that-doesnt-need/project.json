@@ -1,0 +1,28 @@
+{
+  "n": "41",
+  "line": "building a business that doesn't need you. most won't get it.",
+  "section": "Identity one-liners",
+  "broll": "walking along the shoreline at golden hour, back to camera.",
+  "audio": {
+    "track": "Angel Of My Dreams",
+    "artist": "JADE"
+  },
+  "backup": "So Easy (To Fall In Love)",
+  "keyword": "REDESIGN",
+  "placeholders": [],
+  "duration_s": 7,
+  "size": [
+    1080,
+    1920
+  ],
+  "clip": "clips/41.*",
+  "overlay": "overlay.png",
+  "caption": "caption.txt",
+  "export": "41-building-a-business-that-doesnt-need.mp4",
+  "post": {
+    "account": "@taraphilipofficial",
+    "trial_reel": true,
+    "share_to_facebook": false,
+    "share_to_threads": false
+  }
+}
